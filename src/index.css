@@ -1,0 +1,71 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  text-align: center;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  body {
+    background-color: #ffffff; /* หรือสีอื่นที่ทำให้ดูชัดเจน */
+    color: black; /* ทำให้ข้อความใน body เป็นสีดำ */
+  }
+  
+
+}
+.product-image {
+  width: 150px; /* กำหนดความกว้าง */
+  height: 150px; /* กำหนดความสูง */
+  object-fit: cover; /* ปรับให้ภาพคงสัดส่วน */
+  display: block; /* ปรับให้ภาพอยู่กลาง */
+  margin: 0 auto; /* ให้ภาพอยู่กลางกรอบ */
+}
+
+.cart-item {
+  background-color: white; /* พื้นหลังสีขาว */
+  color: black; /* ตัวหนังสือสีดำ */
+  padding: 1rem; /* เพิ่ม padding */
+  border-radius: 0.5rem; /* มุมมน */
+  margin-bottom: 1rem; /* ระยะห่างระหว่างรายการ */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* เงาเบา */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px; /* เพิ่ม padding เพื่อให้ดูดีขึ้น */
+}
+* {
+  box-sizing: inherit;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem; /* ปรับให้เป็น 1.5rem แทน 160px */
+}
+
+/* กำหนดจำนวนคอลัมน์ตามขนาดหน้าจอ */
+.grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.sm\:grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.md\:grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gap-6 {
+  gap: 1.5rem; /* ไม่ต้องมีการกำหนด gap ที่นี่อีกครั้ง */
+}
+
+/* ... เพิ่ม CSS อื่นๆ ที่ต้องการที่นี่ ... */
